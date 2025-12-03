@@ -1,0 +1,26 @@
+In Python, local variables and global variables refer to the scope in which a variable is accessible.
+
+## Local Variables ###
+
+Definition: A variable declared inside a function and accessible only within that function.
+
+Scope: Limited to the function where it is defined.
+
+1)  Defined	Inside a function
+2) Scope	Limited to the function
+3) Lifetime	Exists only during function execution
+
+
+## Global Variables ###
+
+Definition: A variable declared outside of all functions and accessible throughout the program, including inside functions.
+
+Scope: Accessible both inside and outside of functions.
+
+1) Defined Outside all functions
+2) Accessible throughout the program
+3) Exists as long as the program runs
+
+Using global Keyword :
+
+If you want to modify a global variable inside a function, you need to use the global keyword.

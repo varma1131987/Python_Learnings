@@ -1,0 +1,37 @@
+What is DSA?
+
+DSA = Data Structures + Algorithms.
+
+•	Data Structures: Ways to organize data (arrays, lists, trees, graphs, hashes).
+•	Algorithms: Step-by-step procedures to process data (searching, sorting, traversal).
+
+Why its required?
+
+Because the same problem solved inefficiently might take hours; solved efficiently, microseconds. Big O notation measures this efficiency."
+
+
+Big O Notation: The Cheat Sheet
+--------------------------------
+
+Notation	 Name	        Example                     	Speed
+O(1)	    Constant	    Access array element by index	Fastest
+O(log n)	Logarithmic	    Binary search	
+O(n)	    Linear  	    Find max in unsorted array	
+O(n log n)	Linearithmic	Merge sort, quick sort	
+O(n²)	    Quadratic	    Bubble sort, nested loop	
+O(n³)	    Cubic       	Triple nested loop	
+O(2^n)	    Exponential	    Brute force recursion	
+O(n!)	    Factorial	    Generate all permutations   	Slowest
+
+-----------------------------------------------
+
+#refer :C:\Users\Hp\github\Python_Learnings\DSA_Python\Day_1\O(1).py
+
+AWS : 33000 thousand Enhancement (They are making changes programs) releases : Deploy changes -- 2017 back 
+
+2025 : 1 lac Deployement --Wedsite -- > content --> FAANG --Salaries --Fastest --> Basic Python Program --> 1 day -->
+
+150 Program (minimum) --> Hws --> 200+ DSA to solve programs (Leetcode & Hackerank ) End goal : Python 
+
+Releases --> Parents --> " How they frequently they have releases "  --Nvidia -> IPO -->
+-----------------------------------------------------------------------------
