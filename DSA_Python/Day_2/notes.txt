@@ -1,0 +1,94 @@
+Questions about binary search or O(log n) algorithms can be asked in various ways to test your understanding, problem-solving skills, and ability to apply the concept. 
+
+Here are some common types of questions:
+
+1. Conceptual Questions
+These questions test your understanding of binary search and its time complexity.
+
+What is the time complexity of binary search, and why is it O(log n)?
+
+Explain how binary search works.
+
+What are the prerequisites for using binary search?
+
+Can binary search be applied to unsorted arrays? Why or why not?
+
+What is the difference between linear search and binary search?
+
+2. Coding Questions
+---------------------
+
+These questions require you to implement binary search or solve problems using it.
+
+Write a function to implement binary search on a sorted array.
+Modify the binary search algorithm to return the index of the first occurrence of a target value in a sorted array with duplicates.
+Implement binary search to find the square root of a number (without using built-in functions).
+Given a rotated sorted array, find the index of a target value using binary search.
+Find the smallest element in a rotated sorted array using binary search.
+
+3. Problem-Solving Questions
+
+These questions involve applying binary search to solve real-world problems.
+
+You are given a sorted array of integers. Find the first and last position of a given target value.
+Find the peak element in an array (an element that is greater than its neighbors) using binary search.
+Given a sorted array and a target sum, find if there exist two numbers that add up to the target.
+Search for a target value in a 2D matrix where rows and columns are sorted.
+Find the kth smallest element in a sorted matrix.
+
+4. Edge Case Questions
+These questions test your ability to handle edge cases in your implementation.
+
+What happens if the target value is not in the array?
+How does your binary search handle an empty array?
+What if the array contains duplicate values? How would you modify binary search to find all occurrences of the target?
+What if the array size is very large? How would you optimize memory usage?
+
+5. Theoretical Variations
+
+These questions test your understanding of variations of binary search.
+
+How would you implement binary search on a linked list?
+Can binary search be used on strings or other data types? How?
+Explain how binary search is used in algorithms like quicksort or mergesort.
+How does binary search differ in iterative vs. recursive implementations?
+
+6. Debugging Questions
+These questions test your ability to identify and fix issues in a binary search implementation.
+
+Here’s a binary search implementation. Can you find and fix the bug?
+Why might a binary search implementation result in an infinite loop?
+What happens if you use (left + right) / 2 instead of (left + right) // 2 in Python?
+
+7. Optimization Questions
+These questions test your ability to optimize binary search for specific scenarios.
+
+How would you optimize binary search for very large datasets?
+Can you reduce the number of comparisons in binary search?
+How would you modify binary search to work on a distributed system?
+Tips for Answering Binary Search Questions in Interviews:
+Clarify the Problem:
+
+Ask questions to ensure you understand the requirements and constraints.
+Confirm if the array is sorted or if you need to handle edge cases like duplicates.
+Explain Your Approach:
+
+Walk the interviewer through your thought process before writing code.
+Highlight why binary search is appropriate for the problem.
+
+Write Clean Code:
+
+Use meaningful variable names like left, right, and mid.
+Handle edge cases explicitly in your code.
+Analyze Time and Space Complexity:
+
+Explain why the time complexity is O(log n).
+Discuss the space complexity (O(1) for iterative, O(log n) for recursive).
+
+If n = 8, the recursive calls are: 8 → 4 → 2 → 1 (3 calls, log₂(8) = 3).
+
+If n = 16, the recursive calls are: 16 → 8 → 4 → 2 → 1 (4 calls, log₂(16) = 4).
+
+Test Your Code:
+
+Test your implementation with edge cases (e.g., empty array, target not found, duplicates).
