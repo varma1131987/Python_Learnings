@@ -1,0 +1,81 @@
+
+In Python, a list is a built-in data structure that is used to store an ordered collection of items. Lists are mutable, meaning their contents can be changed after creation. They are one of the most commonly used data types in Python.
+
+Key Features of a List:
+----------------------
+
+Ordered: The elements in a list maintain their order, and you can access them using an index.
+Mutable: You can modify, add, or remove elements from a list.
+Heterogeneous: A list can contain elements of different data types (e.g., integers, strings, other lists, etc.).
+Dynamic: Lists can grow or shrink in size as needed
+
+list_name = [item1, item2, item3, ...]
+
+------------------------------------------------------
+
+# Refer list_basics.py 
+
+
+
+-------------------------------------------------------------------
+
+
+“List Comprehension” class outline with exercises and a quiz 
+
+Topic: Python List Comprehension
+
+Audience: Beginner to intermediate
+
+Prerequisites: Basic lists, for loops, if, range.
+
+Learning objectives : "By end of class, students should be able to" 
+
+Write basic list comprehensions to transform and filter data.
+
+Convert simple for-loop + append code into list comprehensions.
+
+Use if and if–else inside comprehensions, and read nested ones.
+
+----------------------------------------------------------------------------
+
+Explain:
+
+Definition: “A concise way to create a new list from an iterable, optionally with filtering.”​
+
+Syntax pattern:
+
+[expression for item in iterable if condition]
+
+Emphasize order: expression first, then for, then optional if.​
+
+expression: What you want to include in the new list.
+item in iterable: Iterates over the given iterable.
+if condition: (Optional) Filters items based on the condition.
+
+-------------------------------------------------------------------------------
+
+The code snippets of examples of list comprehensions in Python. Here's what they do:
+
+1) Squares of Numbers
+
+squares = [x*x for x in range(6)]
+
+Explanation:
+
+This creates a list of squares of numbers from 0 to 5 (since range(6) generates numbers 0 to 5).
+
+The expression x*x calculates the square of each number.
+
+Out put : [0, 1, 4, 9, 16, 25]
+
+2) evens = [x for x in range(11) if x % 2 == 0]
+
+Explanation:
+This creates a list of even numbers from 0 to 10 (since range(11) generates numbers 0 to 10).
+The condition if x % 2 == 0 filters out odd numbers, keeping only those divisible by 
+
+Output : [0, 2, 4, 6, 8, 10]
+
+Lists are versatile and widely used in Python programming!
+
+
