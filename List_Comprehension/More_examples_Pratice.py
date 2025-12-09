@@ -12,4 +12,5 @@
 
 # Create a list of pairs (x, y) for x in [1,2,3] and y in [4,5] where x + y is even.
 
-# Write loop code for any one comprehension above and ask students to convert it back to a comprehension (reverse direction
+# Write loop code for any one comprehension above and ask students to convert it back to a comprehension (reverse direction)
+

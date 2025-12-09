@@ -14,7 +14,6 @@ gmail_addresses = [email for email in emails if email.endswith("@gmail.com")]
 print(gmail_addresses)
 
 
-
 # Explanation:
 # Input List:
 

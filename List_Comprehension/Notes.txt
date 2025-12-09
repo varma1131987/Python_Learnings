@@ -78,4 +78,12 @@ Output : [0, 2, 4, 6, 8, 10]
 
 Lists are versatile and widely used in Python programming!
 
+-----------------------------------------
+
+9-12-2025 : Plain in english ---> Foundations --> Complete world 
+
+----------------------------------------------------------------
+
+
+
 
