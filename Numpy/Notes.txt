@@ -1,0 +1,18 @@
+the Cricket Analytics use case with NumPy is a great idea to understand how data analytics can be applied in real-world scenarios. Here's a structured plan this use case, starting from beginner concepts and progressing to advanced topics.
+
+
+EDA : Data Cleaning and preprocessing
+
+Introduction to the Use Case:
+------------------------------
+
+Objective: Explain the importance of data analytics in cricket.
+
+Topics to Cover:
+
+How cricket generates large amounts of data (e.g., runs, balls, wickets, player stats).
+
+Why analyzing this data is valuable (e.g., team selection, performance optimization, strategy building).
+
+Activity: Show a real-world example of cricket statistics (e.g., player averages, strike rates).
+
