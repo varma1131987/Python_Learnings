@@ -1,11 +1,38 @@
 # mini‑project for the “Stock or Crypto Time Series Analysis” using NumPy.
+
+# Sources for future projects could include:https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/stock-market-multi-agent-system
 # Step 1: Import Necessary Libraries ans sample data  
 import numpy as np  
 
 import numpy as np
 
+
+# ------------Resume Parser
+
+# 1) Upload resume ---
+
+# top 10 Mjob profile : Data engineer, Data Scientist, ML Engineer, AI Specialist, Quantitative Analyst, Financial Analyst, Software Developer, Research Scientist, Statistician, Business Intelligence Analyst.
+
+# 2) Parse resume to extract skills and experience ---
+
+# 3) Match skills with job requirements ---
+
+# 4 ) Rank candidates based on skill match and experience ---
+
+# 5 score candidates and generate report ---
+
+# Acccenture --> Intership Data Science --> 
+
 # File path
 file_path = r"C:\Users\Hp\github\Python_Learnings\Numpy\90days.csv"
+
+#1)How do we get data to train or test our analysis or preditcion ?
+
+
+
+# Data Sources : CSV file containing stock market data with columns: date, open, high, low, close, volume
+# JSON file containing stock market data with similar structure
+# Databases connectivity is not included in this example for simplicity.
 
 # Read the CSV file
 # data = np.genfromtxt(file_path, delimiter=',', skip_header=1)  # Skip header row if present
@@ -22,12 +49,12 @@ data = np.genfromtxt(
 
 # print("Raw data:\n", data)
 
-# import numpy as np
+# # import numpy as np
 
-# Set NumPy to display numbers in full decimal format
-np.set_printoptions(suppress=True,precision=10)  # Suppress scientific notation
+# # Set NumPy to display numbers in full decimal format
+# np.set_printoptions(suppress=True,precision=10)  # Suppress scientific notation
 
-print("Raw data (decimal format):\n", data)
+# print("Raw data (decimal format):\n", data)
 
 
 # Extract columns
@@ -42,16 +69,16 @@ print("First 5 dates: ", dates[:5])
 print("First 5 closes:", closes[:5])
 
 
-# Use your closes array as close_a and follow these exact steps to compute daily returns.
+# # Use your closes array as close_a and follow these exact steps to compute daily returns.
 
 close_a = closes  # if you have only one asset
 
-# Create current and previous price arrays
+# # Create current and previous price arrays
 
 current_prices  = close_a[1:]   # from second day to last day
 previous_prices = close_a[:-1]  # from first day to second-last day
 
-# Calculate daily returns
+# # Calculate daily returns
 
 daily_returns = (current_prices - previous_prices) / previous_prices
 
@@ -59,9 +86,9 @@ print("First 5 daily returns:", daily_returns[:5])
 print("Total returns count:", len(daily_returns))
 print("Original closes count:", len(close_a))
 
-##################################################
+# ##################################################
 
-# closes already defined from earlier
+# # closes already defined from earlier
 window_short = 5
 kernel_short = np.ones(window_short) / window_short   # [1/5, 1/5, 1/5, 1/5, 1/5]
 
@@ -80,11 +107,14 @@ ma20 = np.convolve(closes, kernel_long, mode='valid')
 
 print("Length of 20-day MA:", len(ma20))
 print("First 5 values of 20-day MA:", ma20[:5])
-# ma20 will have len(closes) - 20 + 1 values because mode='valid' only keeps full windows.
 
-# You can now use dates_ma5 with ma5, and dates_ma20 with ma20 in tables or plots in your mini‑project report
 
-# next Step 
+# https://github.com/Jffrank/Books/blob/master/Python%20for%20Data%20Analysis.%20Data%20Wrangling%20with%20Pandas%2C%20NumPy%2C%20and%20IPython%20(2017%2C%20O%E2%80%99Reilly).pdf
+# # ma20 will have len(closes) - 20 + 1 values because mode='valid' only keeps full windows.
+
+# # You can now use dates_ma5 with ma5, and dates_ma20 with ma20 in tables or plots in your mini‑project report
+
+# # next Step 
 
 threshold = 0.01  # 2% daily return 
 
@@ -97,8 +127,8 @@ print("High-return mask (first 10):", high_days_mask[:10])
 num_high_days = np.sum(high_days_mask)
 print("Number of days with return > 2%:", num_high_days)
 
-#  Map back to dates correctly
-# # Returns start from the second date (because each return uses today and yesterday), so align with dates[1:]:
+# #  Map back to dates correctly
+# # # Returns start from the second date (because each return uses today and yesterday), so align with dates[1:]:
 
 high_return_dates = dates[1:][high_days_mask]
 
@@ -106,5 +136,5 @@ print("Dates with return > 2%:")
 for d in high_return_dates:
     print(d)
 
-# Now you have both the count and the exact dates for your report
+# # Now you have both the count and the exact dates for your report
 
