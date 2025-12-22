@@ -1,0 +1,9 @@
+# Ignore .env files
+.env
+
+# Ignore the specific program
+Database/8_TA_streamlit_Momentum.py
+Database/9_ppo_roc_rocp_rocr_rocr100.py
+Database/10_RSI_WILLR.py
+
+

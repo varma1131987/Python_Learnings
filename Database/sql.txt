@@ -1,0 +1,16 @@
+show databases
+
+use nse_market_data
+
+select * from market_data  ORDER BY date DESC LIMIT 1
+
+SELECT *
+FROM market_data
+WHERE symbol = 'NIFTY_BANK'
+ORDER BY date DESC
+LIMIT 1;
+
+
+# https://github.com/TA-Lib/ta-lib-python/blob/master/docs/funcs.md
+"""
+insert into market_data  ORDER BY date DESC LIMIT 1
